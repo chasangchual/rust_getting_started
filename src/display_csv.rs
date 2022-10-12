@@ -16,7 +16,7 @@ pub fn display_csv() {
             .split(',')
             .map(|field| field.trim())
             .collect();
-        if cfg!(deburd_assertions) {
+        if cfg!(debug_assertions) {
             eprintln!("debug: {:?} -> {:?}", record, fields);
         }
 
