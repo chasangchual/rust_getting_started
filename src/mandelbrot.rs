@@ -11,8 +11,9 @@ fn calculate_mandelbrot (
 ) -> Vec<Vec<usize>> {
 
     let mut rows: Vec<_> = Vec::with_capacity(height);
+    // let mut rows: Vec<Vec<usize>> = Vec::with_capacity(height);
 
-    for img_y in 0..height {
+    for img_y in 0..height { // exclusive range 0 to height
 
         let mut row: Vec<usize> = Vec::with_capacity(height);
 
@@ -26,7 +27,7 @@ fn calculate_mandelbrot (
         }
         rows.push(row)
     }
-    rows
+    rows // stagement
 }
 
 fn madelbrot_at_point(
