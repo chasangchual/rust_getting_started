@@ -1,3 +1,7 @@
+/*
+    array example
+ */
+
 pub fn run_array_example() {
     let one = [1, 2, 3];
     let two: [u8; 3] = [1, 2, 3]; // declare type of the array, [u8; 3] => 3 element of u8 type
