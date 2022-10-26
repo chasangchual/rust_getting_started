@@ -1,5 +1,6 @@
 pub fn add_with_lifetime<'a, 'b>(i: &'a i32, j: &'b i32) -> i32 {
-    *i + *j
+    // *i + *j
+    0
 }
 
 fn add_two(a: i32, b: i32) -> i32 {
@@ -17,7 +18,7 @@ pub fn add_fn_owner_ship() {
 }
 
 
-fn longest(x: &str, y: &str) -> &str {
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     if(x.len() > y.len()) {
         x
     } else {
